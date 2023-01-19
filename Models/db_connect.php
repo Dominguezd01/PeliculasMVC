@@ -1,5 +1,4 @@
 <?php
-
 class connector
 {
     private $conexion;
@@ -17,6 +16,5 @@ class connector
         }
 
     }
-
-
 }
+?>
