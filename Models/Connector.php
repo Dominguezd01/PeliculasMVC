@@ -17,10 +17,6 @@ class Connector extends PDO
         }
         
     }
-
-
-
-    
 }
 
 
