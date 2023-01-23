@@ -10,16 +10,18 @@
 
 <body>
     <div>
-        <form action="../Controller/Control.php" method="post">
+        <form action="../Controller/Control.php" method="POST">
             <select name="consultas" id="consultas">
                 <option value="peliculas">Peliculas dramáticas</option>
                 <option value="actrices">Nombre de actrices</option>
                 <option value="actores">Actores de una determinada nacionalidad</option>
                 <option value="peliculas_actor">Peliculas en las que iterviene un actor</option>
             </select>
-            <input type="submit" name="enviar" value="continuar">
+            <input type="submit" name="enviar">
         </form>
     </div>
 </body>
 
 </html>
+
+

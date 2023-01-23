@@ -10,7 +10,21 @@
 
 <body>
     <h1>PELICULAS DRAMATICAS</h1>
-    <div></div>
+    <div>
+        <?php
+            //require_once("../Controller/Control.php");
+
+            foreach($res_consulta as $resultados){
+                echo "
+                    <div>
+                       Nombre: $resultados[titulo];
+                    </div>
+                ";
+            }
+
+
+        ?>
+    </div>
 </body>
 
 </html>

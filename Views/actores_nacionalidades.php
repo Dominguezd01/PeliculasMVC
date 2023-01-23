@@ -10,6 +10,7 @@
     <form action="" method="post">
         <select name="nacionalidades" id="nacionalidades">
             <?php
+                echo"<option>"
             ?>
         </select>
         <input type="submit" name="enviar" value="continuar">

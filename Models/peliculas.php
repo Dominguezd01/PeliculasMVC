@@ -4,4 +4,5 @@
         $results = $conexion->query("Select titulo from peliculas");
         return $results->fetchAll(0);
     }
+    
 ?>

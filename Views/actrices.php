@@ -8,6 +8,11 @@
 </head>
 <body>
     <h1>NOMBRE DE LAS ACTRICES</h1>
-    <div></div>
+    <div>
+        <?php
+            var_dump($res_consulta);
+        ?>
+    
+    </div>
 </body>
 </html>
