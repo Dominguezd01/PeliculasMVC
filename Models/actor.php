@@ -6,6 +6,6 @@
 
     function count_actores($conexion, $nacionalidad){
         $results = $conexion->query("Select COUNT(*) FROM actor where nacionalidad='$nacionalidad'");
-        return $results -> fetchAll(0);
+       return $results -> fetchAll(PDO::FETCH_COLUMN);
     }
 ?>

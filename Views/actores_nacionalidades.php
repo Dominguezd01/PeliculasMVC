@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    p{
+        text-transform: uppercase;
+    }
+</style>
 <body>
-    <form action="" method="post">
-        <select name="nacionalidades" id="nacionalidades">
-            <?php
-                echo"<option>"
-            ?>
-        </select>
-        <input type="submit" name="enviar" value="continuar">
-    </form>
+    <h1>NÚMERO DE NACIONALIDADES</h1>
+    <div>
+        <p>
+            <?php 
+                echo " HAY $numeroActores ACTORES de nacionalidad $nacionalidadElegida" ;
+            ?>  
+    
+        </p>
+    </div>
 </body>
 </html>

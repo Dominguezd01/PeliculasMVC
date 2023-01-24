@@ -9,7 +9,16 @@
 <body>
     <h1>NÚMERO DE NACIONALIDADES</h1>
     <div>
-        
+    <form action="../Controller/Control.php" method="POST">
+        <select name="actoresNacionalidad" id="">
+            <?php 
+                for($i = 0; $i<3; $i++){
+                    echo "<option value='$nacionalidades[$i]'>$nacionalidades[$i]</option>";
+                }
+            ?>
+        </select>
+        <input type="submit" name="enviarBuscarNacionalidad">
+        </form>
     </div>
 </body>
 </html>
