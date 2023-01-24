@@ -1,3 +1,3 @@
 <?php
-require_once("./Views/selector.php");
+header("location: ./Views/selector.php");
 ?>

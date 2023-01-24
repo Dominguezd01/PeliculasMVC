@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <style>
+
+      :root{
+        color-scheme: dark;
+    }
+    body{
+        display: grid;
+        place-items: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    }
     p{
         text-transform: uppercase;
     }

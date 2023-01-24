@@ -175,3 +175,4 @@ COMMIT;
 
 
 
+Select titulo from intervenciones where id_actor = (Select id_actor From actor where nombre_apellidos = "Antonio Banderas");

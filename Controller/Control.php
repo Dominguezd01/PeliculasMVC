@@ -15,13 +15,14 @@ if(isset($_POST["consultas"])){
             $res_consulta = nombre_actrices($conexion);
             require_once ("../Views/actrices.php");
             break;
-        case "actoresNacionalidades":
+        case "actores_nacionalidades":
             require_once("../Models/selector_nacionalidades.php");
             $nacionalidades = select_nacionalidades($conexion);
-            //var_dump($nacionalidades);
             require_once("../Views/num_nacionalidades.php");
             break;
-        
+        case "peliculas_actor":
+            require_once("../Views/nombre_actor.php");
+            break;
     }
 }
 
@@ -30,8 +31,12 @@ if(isset($_POST["enviarBuscarNacionalidad"])){
     $nacionalidadElegida = $_POST["actoresNacionalidad"];
     $numeroActores = count_actores($conexion,$nacionalidadElegida )[0];
     require_once("../Views/actores_nacionalidades.php");
-
-
+}
+if(isset($_POST["enviar_nombre_actor"])){
+    require_once("../Models/intervenciones.php");
+    $actor_nombre = $_POST["nombre_actor"];
+    $peliculas = peliculas_interviene_actor($conexion,$actor_nombre);
+    require_once("../Views/resultados_intervenciones.php");
 }
 
 ?>
